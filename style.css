@@ -1,0 +1,98 @@
+*{  padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+.container{
+    max-width: 1130px;
+    height: 60vh;
+    padding: 2rem 3rem;
+    margin: 2rem auto;
+    box-shadow: 10px 13px 2px solid rgba(black, 1);
+}
+.fore-display{ text-align: center;
+    position: relative;
+    padding: 2rem 0;
+}
+.bg{ position: absolute;
+    z-index: -1;
+    background: url(./images/pattern-bg.png) no-repeat  center center/cover ;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 330px;
+    border-radius: 5px 5px 0 0;
+}
+.title{ color: #fff;
+}
+form{display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+}
+input{ width: 400px;
+    margin: 1rem 0;
+    padding: .7rem;
+    border-radius: 10px 0 0 10px;
+    border: none;
+    outline: none;
+    box-shadow:  1px 1px 6px #cfcfcf,
+}
+button{ margin: 1rem 0;
+    padding: .6479rem;
+    border-radius: 0 10px 10px 0;
+    background-color: #000;
+    border: none;
+    cursor: pointer;
+}
+.card{max-width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    padding: 1rem 2rem;
+    min-height: 130px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow:  1px 1px 6px #cfcfcf;
+    z-index: 99;
+    position: absolute;
+    right: 0;
+    left: 10%;       
+}
+.card span{
+    font-size: 10px;
+    color: rgb(153, 146, 146);
+}
+.card h3{
+    font-weight: 600;
+}
+.two,.three,.four{ border-left: 1px solid black;
+    padding-left: 1rem;
+}
+#map{
+    height: 100%;
+    width: 100%;
+    z-index: 10;   
+    border-radius: 0 0 5px 5px;
+}
+
+@media(max-width:800px){
+    .card {
+        max-width: 50%;
+        flex-direction:column;
+        justify-content: center;
+        left: 25%;
+    }
+    .container {
+        width: 100%;
+        height: 100vh;
+        padding:0;
+        margin: 0;
+    }
+
+    .two,.three,.four{
+        border: none;
+    }
+}
