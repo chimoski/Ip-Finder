@@ -51,8 +51,9 @@ const renderMap = (lat,lng)=>{
         zoom: 6
     },   
     ); 
-    L.tileLayer('https://api.maptiler.com/maps/streets/256/{z}/{x}/{y}.png?key=jaK6aMo8eZNK6qsw9XQq',{
-        license: '<a href="https://www.maptiler.com/copyright/" target="_blank">&copy; MapTiler</a> <a href="https://www.openstreetmap.org/copyright" target="_blank">&copy; OpenStreetMap contributors</a>',
+    L.tileLayer('https://{s}.google.com/vt/lyrs=m&x={x}&y={y}&z={z}',{
+        license: 'Map data &copy<a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+        subdomains:['mt0','mt1','mt2','mt3'],
         maxZoom: 25,
         enableHighAccuracy: true,
         
@@ -80,6 +81,9 @@ const renderDetails =(details)=>{
     timeZone.innerHTML = details.location.timezone;
     isp.innerHTML= details.isp;
 }
+
+
+
 
 
 
